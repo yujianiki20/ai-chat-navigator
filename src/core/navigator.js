@@ -341,7 +341,7 @@
       const tooltip = document.createElement('div');
       tooltip.id = 'chatnav-tooltip';
 
-      // Label element for ChatGPT
+      // Label element for assistant/site
       const labelEl = document.createElement('div');
       labelEl.className = 'chatnav-tooltip-label';
       Object.assign(labelEl.style, {
@@ -711,7 +711,8 @@
 
       // Set label (only for assistant)
       if (msg.role === 'assistant') {
-        this.tooltipLabel.textContent = 'ChatGPT';
+        const label = this.adapter?.getAssistantLabel?.() || 'Assistant';
+        this.tooltipLabel.textContent = label;
         this.tooltipLabel.style.display = 'block';
       } else {
         this.tooltipLabel.textContent = '';

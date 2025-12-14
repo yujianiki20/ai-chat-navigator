@@ -15,6 +15,14 @@
     }
 
     /**
+     * Human-readable label for the assistant model/site.
+     * Used in the tooltip.
+     */
+    getAssistantLabel() {
+      return 'Assistant';
+    }
+
+    /**
      * Return true if this adapter should be used on the current page.
      * Override in concrete adapters.
      */

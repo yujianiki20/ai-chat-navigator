@@ -10,6 +10,10 @@
       this.name = 'chatgpt';
     }
 
+    getAssistantLabel() {
+      return 'ChatGPT';
+    }
+
     isMatch() {
       return /(^|\.)chatgpt\.com$/.test(location.hostname) || /(^|\.)chat\.openai\.com$/.test(location.hostname);
     }

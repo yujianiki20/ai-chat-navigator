@@ -8,6 +8,7 @@
   registry.getAdapter = () => {
     const candidates = [];
     if (ChatNav.ChatGPTAdapter) candidates.push(new ChatNav.ChatGPTAdapter());
+    if (ChatNav.GeminiAdapter) candidates.push(new ChatNav.GeminiAdapter());
 
     for (const a of candidates) {
       try {

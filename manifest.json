@@ -1,18 +1,21 @@
 {
   "manifest_version": 3,
   "name": "Chat Navigator Minimap",
-  "version": "0.1.1",
-  "description": "Right-side minimap navigator for ChatGPT (and other chat sites).",
+  "version": "0.1.2",
+  "description": "Right-side minimap navigator for ChatGPT, Gemini, and other chat sites.",
   "content_scripts": [
     {
       "matches": [
         "https://chat.openai.com/*",
-        "https://chatgpt.com/*"
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://bard.google.com/*"
       ],
       "js": [
         "src/core/utils.js",
         "src/adapters/base.js",
         "src/adapters/chatgpt.js",
+        "src/adapters/gemini.js",
         "src/adapters/registry.js",
         "src/core/navigator.js",
         "src/content.js"
