@@ -1,0 +1,54 @@
+# ===== OS / Explorer junk =====
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# Windows Mark-of-the-Web
+*:Zone.Identifier
+
+# ===== Editor / IDE =====
+.vscode/
+.idea/
+*.iml
+
+# ===== Logs / temp =====
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tmp
+tmp/
+
+# ===== Env / secrets =====
+.env
+.env.*
+!.env.example
+
+# ===== Dependencies =====
+node_modules/
+
+# ===== Build outputs (adjust to your project) =====
+dist/
+build/
+out/
+release/
+web-ext-artifacts/
+
+# ===== Tool caches =====
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.vite/
+.turbo/
+.cache/
+coverage/
+
+# ===== Chrome extension packaging / keys =====
+*.crx
+*.pem
+*.p12
+*.zip
+*.tgz
+
